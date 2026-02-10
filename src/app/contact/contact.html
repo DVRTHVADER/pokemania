@@ -1,0 +1,61 @@
+<section class="contact-section">
+  <div class="contact-wrapper">
+    <!-- LEFT: FORM -->
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+
+      <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+        <div class="row">
+          <input
+            type="text"
+            placeholder="First Name"
+            required
+            [(ngModel)]="contact.fName"
+            name="fName"
+          />
+
+          <input
+            type="text"
+            placeholder="Last Name"
+            required
+            [(ngModel)]="contact.lName"
+            name="lName"
+          />
+        </div>
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          required
+          [(ngModel)]="contact.email"
+          name="email"
+        />
+
+        <textarea
+          placeholder="Your message..."
+          rows="5"
+          required
+          [(ngModel)]="contact.message"
+          name="message"
+        ></textarea>
+
+        <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+      </form>
+    </div>
+
+    <!-- RIGHT: WEBSITE DESCRIPTION -->
+    <div class="contact-info">
+      <h2>About PokeMania</h2>
+      <p>
+        PokeMania is a collectible marketplace built for fans of Pokémon, NHL, and legendary
+        franchises. Discover rare cards, iconic players, and exclusive collectibles — all in one
+        place.
+      </p>
+
+      <p>
+        Whether you're a collector, a fan, or just starting your journey, PokeMania brings nostalgia
+        and excitement together.
+      </p>
+    </div>
+  </div>
+</section>

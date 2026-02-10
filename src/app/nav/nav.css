@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'op';
+  src: url('../fonts/OnePiece-zAqL.ttf') format('truetype');
+  font-weight: thick;
+  font-style: normal;
+  font-size: large;
+}
+
+/* Toolbar */
+.navbar {
+  position: fixed;
+  top: 60px;
+
+  width: 100%;
+  height: 100px;
+  padding: 0 24px;
+  background: linear-gradient(90deg, #0000003e, #00000042 60%, #0000009c);
+  z-index: 1000;
+  transition:
+    background 6.4s ease-in-out,
+    color 5.4s ease-in-out;
+}
+
+.navbar:hover {
+  color: #facc15;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.brand-title {
+  font-family: 'op', sans-serif;
+  font-size: 32px;
+  color: #facc15;
+  text-shadow: 0 0 8px rgba(255, 179, 2, 0.598);
+  letter-spacing: 1px;
+}
+
+/* Spacer */
+.spacer {
+  flex: 1;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  font-family: op, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #e5e7eb;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f7f7f7;
+  transform: translateY(-2px);
+  background-color: rgb(1, 1, 26);
+  transition: ease-in-out 0.2s;
+}
+
+/* Page background fix */
+body {
+  background-color: #bd0707;
+  margin: 0;
+  padding-top: 80px; /* prevents content hiding under navbar */
+}
+/* Media Queries for smaller screens */
+@media (max-width: 1024px) {
+  .navbar {
+    height: 80px;
+    padding: 0 16px;
+  }
+
+  .brand-title {
+    font-size: 24px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-links a {
+    font-size: 20px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 8px 16px;
+    align-items: flex-start;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-title {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    display: none; /* hidden by default, can be toggled with JS for a hamburger menu */
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    width: 100%;
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px 12px;
+  }
+
+  .brand-title {
+    font-size: 18px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+}
+.sale-banner {
+  width: 100%;
+  background: linear-gradient(90deg, #ff0000, #ff8c00);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+}
+
+.sale-banner p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-text 15s linear infinite;
+}
+
+/* Scrolling animation */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
