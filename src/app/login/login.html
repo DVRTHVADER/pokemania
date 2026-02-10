@@ -1,0 +1,28 @@
+<section class="login-wrapper">
+  <!-- Background image -->
+  <div class="bg-image"></div>
+
+  <!-- Floating particles -->
+  <div class="particles"></div>
+
+  <!-- Dark overlay -->
+  <div class="overlay"></div>
+
+  <!-- Loader -->
+  <div class="loader" *ngIf="isLoading">
+    <div class="pokeball"></div>
+    <p>hold on...</p>
+  </div>
+
+  <!-- Login card -->
+  <div class="login-card" *ngIf="!isLoading">
+    <p class="title">PokeMania</p>
+
+    <input type="text" placeholder="Admin" [(ngModel)]="loginModel.username" />
+
+    <input type="password" placeholder="Admin1234+" [(ngModel)]="loginModel.password" />
+
+    <button (click)="login()">Enter the World</button>
+    <h2>Welcome back {{ loginModel.username }}!</h2>
+  </div>
+</section>

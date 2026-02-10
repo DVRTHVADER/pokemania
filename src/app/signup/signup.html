@@ -1,0 +1,44 @@
+<section class="signup-wrapper">
+  <div class="bg-image"></div>
+  <div class="overlay"></div>
+
+  <!-- Loader -->
+  <div class="loader" *ngIf="isLoading">
+    <div class="pokeball"></div>
+    <p>Creating Trainer Account...</p>
+  </div>
+
+  <!-- Signup Card -->
+  <div class="signup-card" *ngIf="!isLoading">
+    <h2 class="title">sign up to news letter</h2>
+
+    <input type="text" placeholder="Trainer Name" [(ngModel)]="username" />
+
+    <input type="email" placeholder="Email" [(ngModel)]="email" />
+
+    <input type="password" placeholder="Secret Code" [(ngModel)]="password" />
+
+    <input type="password" placeholder="Confirm Secret Code" [(ngModel)]="confirmPassword" />
+
+    <button (click)="signup()">Create Account</button>
+
+    <p class="login-link">
+      Already a trainer?
+      <a routerLink="/login">Login</a>
+    </p>
+  </div>
+  <div class="our mission">
+    <p>
+      our mission is to bring joy and excitement to every trainer who joins our community. we aspire
+      to create a vibrant and inclusive space where pokemon enthusiasts can connect, share their
+      passion, and embark on unforgettable adventures together. we are dedicated to providing a
+      platform that fosters camaraderie, encourages creativity, and celebrates the magic of pokemon.
+      whether you're a seasoned trainer or just starting your journey, our mission is to make every
+      moment in the world of pokemon memorable and enjoyable for all. no matter where you are in
+      your pokemon journey, we are here to support you and help you become the best trainer you can
+      be. join us and let's make the world of pokemon an even more exciting place for everyone! And
+      remember, in the world of pokemon, it's not just about catching them all, but about the
+      friendships and adventures you create along the way. welcome to our community of trainers!
+    </p>
+  </div>
+</section>

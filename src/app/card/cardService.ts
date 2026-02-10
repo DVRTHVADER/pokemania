@@ -13,18 +13,18 @@ export class CardService {
     this.pokemonCards = [
       {
         ID: 1,
-        title: 'Pikachu',
+        title: 'Umbreon',
         description: 'Electric-type Pokémon',
         imageUrl: 'https://m.media-amazon.com/images/I/81JbXBLTAVL._AC_UF894,1000_QL80_.jpg',
-        price: 25,
+        price: 25.99,
       },
       {
         ID: 2,
-        title: 'Charizard',
+        title: 'Pikachu',
         description: 'Fire/Flying Pokémon',
         imageUrl:
           'https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH12/SWSH12_EN_49.png',
-        price: 120,
+        price: 120.99,
       },
       {
         ID: 3,
@@ -32,7 +32,7 @@ export class CardService {
         description: 'Grass/Poison Pokémon',
         imageUrl:
           'https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH12/SWSH12_EN_1.png',
-        price: 15,
+        price: 15.99,
       },
       {
         ID: 4,
@@ -40,7 +40,7 @@ export class CardService {
         description: 'Water-type Pokémon',
         imageUrl:
           'https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH12/SWSH12_EN_2.png',
-        price: 20,
+        price: 20.0,
       },
       {
         ID: 5,
@@ -48,7 +48,7 @@ export class CardService {
         description: 'Normal-type Pokémon',
         imageUrl:
           'https://assets.pokemon.com/static-assets/content-assets/cms2/img/cards/web/SWSH12/SWSH12_EN_3.png',
-        price: 30,
+        price: 30.99,
       },
     ];
 
@@ -58,21 +58,21 @@ export class CardService {
         title: 'Wayne Gretsky',
         description: 'Oilers Legend and NHL All-Time Leading Scorer',
         imageUrl: 'https://images.production.sportscardinvestor.com/275_348_5',
-        price: 100,
+        price: 1000.99,
       },
       {
         ID: 2,
         title: 'Mario Lemieux',
         description: 'Penguins Legend and NHL Hall of Famer',
         imageUrl: 'https://i.ebayimg.com/images/g/Vg0AAOSwUUdit79X/s-l1200.jpg',
-        price: 90,
+        price: 900.99,
       },
       {
         ID: 3,
         title: 'Sidney Crosby',
         description: 'Current Penguins Captain and NHL Superstar',
         imageUrl: 'https://limperiumducollectionneur.com/wp-content/uploads/img_7927.jpeg',
-        price: 80,
+        price: 850.99,
       },
       {
         ID: 4,
@@ -80,7 +80,7 @@ export class CardService {
         description: 'Capitals Superstar and Goal-Scoring Machine',
         imageUrl:
           'https://static01.nyt.com/athletic/uploads/wp/2025/01/17122408/oviudrookieclass2-595x1024.jpeg',
-        price: 85,
+        price: 850.99,
       },
       {
         ID: 5,
@@ -88,7 +88,7 @@ export class CardService {
         description: 'Oilers Captain and NHL’s Best Player',
         imageUrl:
           'https://globalnews.ca/wp-content/uploads/2020/06/mcdavid-1.jpg?quality=65&strip=all',
-        price: 95,
+        price: 95.99,
       },
       {
         ID: 6,
@@ -96,14 +96,38 @@ export class CardService {
         description: 'NHL Legend and One of the Greatest Players of All Time',
         imageUrl:
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEeKhmd-B5_s694v8eK0f1qy2Rb3CmMbOFng&s',
-        price: 70,
+        price: 70.59,
       },
       {
         ID: 7,
         title: 'Patrick Roy',
         description: 'Hall of Fame Goalie and NHL Legend',
         imageUrl: 'https://i.ebayimg.com/images/g/7LkAAOSwaltkVCl6/s-l1200.jpg',
-        price: 75,
+        price: 75.99,
+      },
+      {
+        ID: 8,
+        title: 'Hakeem Olajuwon',
+        description: 'NBA Legend and One of the Greatest Centers of All Time',
+        imageUrl:
+          'https://i.psacard.com/cardfacts/1988-fleer-53-akeem-olajuwon-gem-mt-10-89395.jpg?h=1000',
+        price: 800.99,
+      },
+      {
+        ID: 9,
+        title: 'Barry Bonds',
+        description: 'MLB Legend and Home Run King',
+        imageUrl:
+          'https://img.beckett.com/news/news-content/uploads/2022/01/1987-Topps-Barry-Bonds-Rookie-Card.jpg',
+        price: 750.99,
+      },
+      {
+        ID: 10,
+        title: 'Michael Jordan',
+        description: 'NBA Legend and One of the Greatest Players of All Time',
+        imageUrl:
+          'https://preview.redd.it/whats-your-favorite-michael-jordan-card-that-you-own-v0-17ygstsz7sed1.jpeg?auto=webp&s=8751211e6ed5b5f327d7920133428fc2c6f36b61',
+        price: 2599.99,
       },
     ];
     this.onepieceCards = [
@@ -114,7 +138,7 @@ export class CardService {
           'The main protagonist of One Piece, known for his rubber powers and adventurous spirit.',
         imageUrl:
           'https://store.401games.ca/cdn/shop/files/Monkey.D.Luffy_PremiumCardCollection-BestSelectionVol.3-_-P-075-Promo_500x.jpg?v=1747254691',
-        price: 50,
+        price: 50.99,
       },
       {
         ID: 2,
@@ -122,7 +146,7 @@ export class CardService {
         description:
           'The swordsman of the Straw Hat Pirates, known for his three-sword fighting style.',
         imageUrl: 'https://i.ebayimg.com/images/g/f9UAAOSw~7Nmh1YC/s-l400.jpg',
-        price: 45,
+        price: 45.99,
       },
       {
         ID: 3,
@@ -130,7 +154,7 @@ export class CardService {
         description:
           'Luffy’s powerful transformation that enhances his strength, speed, and durability.',
         imageUrl: 'https://i.ebayimg.com/images/g/XIgAAOSwE19nSZWF/s-l400.jpg',
-        price: 40,
+        price: 90.99,
       },
       {
         ID: 4,
@@ -138,7 +162,7 @@ export class CardService {
         description:
           'Luffy’s most powerful transformation, combining all his previous Gear transformations into one ultimate form.',
         imageUrl: 'https://i.ebayimg.com/images/g/vgsAAOSwIGNlBUEA/s-l400.jpg',
-        price: 35,
+        price: 420.75,
       },
 
       {
@@ -148,7 +172,7 @@ export class CardService {
           'The musician of the Straw Hat Pirates, known for his skeletal appearance and soul-based abilities.',
         imageUrl:
           'https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/EB01/EB01-046_EN.webp',
-        price: 30,
+        price: 30.99,
       },
       {
         ID: 6,
@@ -156,7 +180,7 @@ export class CardService {
         description:
           'The helmsman of the Straw Hat Pirates, known for his fishman karate skills and loyalty to his friends.',
         imageUrl: 'https://i.ebayimg.com/images/g/2CAAAOSw5jhkFzqk/s-l1200.jpg',
-        price: 40,
+        price: 40.99,
       },
 
       {
@@ -166,7 +190,7 @@ export class CardService {
           'Luffy’s older brother and a powerful pirate known for his fire-based abilities.',
         imageUrl:
           'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0kHbwOAfSMovHG_A2_9inV5XkuHaAjJIlA&s',
-        price: 45,
+        price: 45.99,
       },
       {
         ID: 8,
@@ -174,7 +198,7 @@ export class CardService {
         description:
           'The captain of the Red Hair Pirates and one of the Four Emperors, known for his strong Haki and influence in the pirate world.',
         imageUrl: 'https://cardotaku.com/cdn/shop/products/OP01-120.png?v=1658123210&width=2048',
-        price: 50,
+        price: 500.99,
       },
 
       {
@@ -184,7 +208,7 @@ export class CardService {
           'One of the Four Emperors and the strongest creature in the world, known for his immense strength and durability.',
         imageUrl:
           'https://omotenashitcg.com/cdn/shop/files/PRB01-02_83_600x600_crop_center.jpg?v=1770186173',
-        price: 50,
+        price: 500.99,
       },
       {
         ID: 10,
@@ -192,7 +216,7 @@ export class CardService {
         description:
           'One of the Four Emperors and the matriarch of the Big Mom Pirates, known for her insatiable appetite and powerful abilities.',
         imageUrl: 'https://asia-en.onepiece-cardgame.com/images/cardlist/card/ST07-001.png?251219',
-        price: 45,
+        price: 450.99,
       },
     ];
   }
